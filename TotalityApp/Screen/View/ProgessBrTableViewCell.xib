@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="ProgessBrTableViewCell" customModule="TotalityApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzX-3A-ZDG">
+                        <rect key="frame" x="27" y="11" width="274" height="50"/>
+                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="PLAY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadious">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsb-DL-Kjf">
+                        <rect key="frame" x="20" y="10" width="267" height="50"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AbQ-uS-Zet">
+                                <rect key="frame" x="0.0" y="0.0" width="267" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOWNLOADS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvp-90-ruZ">
+                                <rect key="frame" x="82" y="15" width="122" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="WtH-wJ-IuM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="Uvp-90-ruZ" firstAttribute="top" secondItem="xsb-DL-Kjf" secondAttribute="top" constant="15" id="1e0-UY-FjP"/>
+                            <constraint firstAttribute="trailing" secondItem="Uvp-90-ruZ" secondAttribute="trailing" constant="63" id="Nyv-Iu-2QT"/>
+                            <constraint firstAttribute="trailing" secondItem="AbQ-uS-Zet" secondAttribute="trailing" id="cCc-4U-Euu"/>
+                            <constraint firstItem="AbQ-uS-Zet" firstAttribute="top" secondItem="xsb-DL-Kjf" secondAttribute="top" id="leN-40-aQB"/>
+                            <constraint firstAttribute="height" constant="50" id="rR0-0E-G0o"/>
+                            <constraint firstItem="AbQ-uS-Zet" firstAttribute="leading" secondItem="xsb-DL-Kjf" secondAttribute="leading" id="tKt-uA-pBR"/>
+                            <constraint firstAttribute="bottom" secondItem="AbQ-uS-Zet" secondAttribute="bottom" id="w7q-yY-wDa"/>
+                            <constraint firstItem="Uvp-90-ruZ" firstAttribute="leading" secondItem="xsb-DL-Kjf" secondAttribute="leading" constant="82" id="xUS-ny-dCL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadious">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoF-Qu-L8T">
+                        <rect key="frame" x="291" y="18" width="29" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="29" id="O2c-hP-8NR"/>
+                            <constraint firstAttribute="height" constant="31" id="mae-kp-MrI"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="xsb-DL-Kjf" secondAttribute="trailing" constant="42" id="2BQ-ey-Yuh"/>
+                    <constraint firstItem="xsb-DL-Kjf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9vx-2r-cMp"/>
+                    <constraint firstItem="PoF-Qu-L8T" firstAttribute="leading" secondItem="xsb-DL-Kjf" secondAttribute="trailing" constant="4" id="9zu-RF-Ls2"/>
+                    <constraint firstItem="xsb-DL-Kjf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Kcf-SK-QpI"/>
+                    <constraint firstAttribute="bottom" secondItem="xsb-DL-Kjf" secondAttribute="bottom" constant="13" id="PQ4-AW-5Uv"/>
+                    <constraint firstItem="PoF-Qu-L8T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="S7Y-JZ-0Ir"/>
+                    <constraint firstItem="LzX-3A-ZDG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="27" id="ciH-NK-7T0"/>
+                    <constraint firstAttribute="trailing" secondItem="PoF-Qu-L8T" secondAttribute="trailing" constant="9" id="dQX-Je-veS"/>
+                    <constraint firstAttribute="bottom" secondItem="LzX-3A-ZDG" secondAttribute="bottom" constant="12" id="fDr-pJ-3eC"/>
+                    <constraint firstAttribute="trailing" secondItem="LzX-3A-ZDG" secondAttribute="trailing" constant="28" id="gIb-5f-d3B"/>
+                    <constraint firstItem="LzX-3A-ZDG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="nD0-rH-RTf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="playBtn" destination="LzX-3A-ZDG" id="8Xd-4D-tlk"/>
+                <outlet property="progessBr" destination="AbQ-uS-Zet" id="nVs-s3-qlB"/>
+                <outlet property="progessLbl" destination="Uvp-90-ruZ" id="PDV-4u-9Lx"/>
+                <outlet property="progessView" destination="xsb-DL-Kjf" id="TFG-87-7Yq"/>
+                <outlet property="yesButton" destination="PoF-Qu-L8T" id="4l2-ZW-Ntp"/>
+            </connections>
+            <point key="canvasLocation" x="-5.343511450381679" y="29.929577464788736"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
